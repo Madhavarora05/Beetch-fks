@@ -1,0 +1,241 @@
+/* Parallax Section */
+.parallax-section {
+    position: relative;
+    height: 70vh;
+    /* Adjust height as needed */
+    background-image: url('../../assets/images/about3.jpeg');
+    /* Replace with the actual path to your image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-overlay h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* About Content Section */
+.about-content {
+    padding: 3rem 10rem;
+    background-color: #000;
+    /* Black background to match the example */
+    color: #fff;
+    /* White text for contrast */
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* Highlighted Text */
+.about-content strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .parallax-section {
+        height: 50vh;
+    }
+
+    .parallax-overlay h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Features Section */
+.features-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem 10rem;
+    background-color: #111; /* Dark background for contrast */
+    color: #fff;
+  }
+  
+  .feature {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .feature-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  .social-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e4405f; /* Default for Instagram */
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-btn:hover {
+    background-color: #c13584;
+  }
+  
+  /* Specific colors for Instagram and Pinterest */
+  .instagram-btn {
+    background-color: #e4405f;
+  }
+  
+  .instagram-btn:hover {
+    background-color: #c13584;
+  }
+  
+  .pinterest-btn {
+    background-color: #e60023; /* Pinterest red */
+  }
+  
+  .pinterest-btn:hover {
+    background-color: #bd0027;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features-section {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+  
+    .feature-image {
+      max-width: 80%;
+      margin: 0 auto 1rem;
+    }
+  
+    .feature h3 {
+      font-size: 1.2rem;
+    }
+  
+    .feature p {
+      font-size: 0.95rem;
+    }
+  
+    .social-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* For "For You" Collection Section */
+.for-you-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .for-you-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .for-you-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .for-you-cards {
+      justify-content: center;
+    }
+  }
+/* Contact Information Section */
+.contact-section {
+    padding: 5rem 2rem;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 500px;
+  }
+  
+  .contact-section li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .contact-section strong {
+    font-weight: bold;
+  }
+    

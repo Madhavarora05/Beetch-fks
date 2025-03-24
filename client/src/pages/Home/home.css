@@ -1,0 +1,255 @@
+/* src/pages/Home/home.css */
+
+.home-container {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../assets/images/home.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  animation: zoomInOut 20s ease-in-out infinite;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+}
+
+@keyframes zoomInOut {
+  0% {
+    background-size: 100%;
+  }
+
+  50% {
+    background-size: 120%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Shared Section (New Drop & Bestseller) */
+.shared-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.shared-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.shared-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.shared-cards .card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shared-cards img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.shared-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* View All Button */
+.view-all-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #ffd700;
+}
+
+/* Responsive Design for Shared Section */
+@media (max-width: 768px) {
+  .shared-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .shared-cards {
+    grid-template-columns: 1fr;
+  }
+}
+/* New Section */
+.new-section {
+  margin: 2rem 4rem;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(150deg, #f9f9f9 70%, red);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.new-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.new-section-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-section-image {
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.new-section-image:hover {
+  transform: scale(1.05);
+}
+
+.new-section-text {
+  flex: 1;
+  text-align: left;
+  color: #333;
+  padding: 1rem;
+}
+
+.new-section-text h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.new-section-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.explore-now-btn {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.explore-now-btn:hover {
+  background-color: #ffd700;
+  color: #222;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .new-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .new-section-image-container {
+    margin-bottom: 1rem;
+  }
+
+  .new-section-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .new-section-text {
+    padding: 0;
+  }
+
+  .new-section-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .new-section-text p {
+    font-size: 1rem;
+  }
+
+  .explore-now-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Stand Out Section */
+.stand-out-section {
+  padding:2rem 0;
+  background-color: black;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.stand-out-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: zoomOut 5s ease-in-out infinite;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.stand-out-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+

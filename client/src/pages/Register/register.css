@@ -1,0 +1,92 @@
+/* Full-page register background */
+.register-page {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #ddd;
+  margin-top: 5rem;
+  text-align: center;
+  padding: 8rem 2rem;
+  padding-top: 10rem;
+}
+
+/* Register Form Heading */
+.register-page h2 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Register Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-form input {
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.register-form button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #ffd700;
+}
+
+/* Links */
+.register-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.already-account-link {
+  font-weight: bold;
+  color: blue;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.already-account-link:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .register-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .register-form input,
+  .register-form button {
+    font-size: 0.9rem;
+  }
+
+  .already-account-link {
+    font-size: 0.8rem;
+  }
+}

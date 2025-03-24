@@ -1,0 +1,34 @@
+.product-page-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .product-image-section {
+    flex: 1;
+  }
+  
+  .product-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .product-details-section {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .size-button {
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  .add-to-cart-btn, .buy-now-btn {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .product-description {
+    margin-top: 15px;
+  }
+  
